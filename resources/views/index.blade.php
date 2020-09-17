@@ -43,33 +43,33 @@
 
 				<!-- Lista Empregados -->
 				<section id="tm-section-2" class="tm-section tm-section-carousel">
-					<div>
 						<header class="mb-4"><h2 class="tm-text-shadow">Empregados Cadastrados</h2></header>
 						<hr>		            
 						<div class="tm-img-container">					
 							<table class="table table-dark" id="tblEmpregados">
 								<thead>
 									<tr>
-									<th scope="col">Matrícula</th>
-									<th scope="col">Nome</th>
-									<th scope="col">Coordenação</th>
-									<th scope="col">Unidade</th>
-									<th scope="col"></th>
+										<th scope="col">Matrícula</th>
+										<th scope="col">Nome</th>
+										<th scope="col">Coordenação</th>
+										<th scope="col">Unidade</th>
+										<th scope="col"></th>
 									</tr>
 								</thead>
 								<tbody>
 			
 								</tbody>
 								</table>
-						</div>						            		          
-					</div>       		          	
+						</div>						            		                		          	
 				</section>
 
-				
+				<div id="divModais">
+
+				</div>
 
 				<!-- Sobre mim -->
 				<section id="tm-section-3" class="tm-section">
-					<div class="fade"></div>
+					<div class="fadeSW"></div>
 					<div class="star-wars">
 						<div class="crawl">
 							<div class="title">
