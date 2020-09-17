@@ -1,3 +1,43 @@
+Requisitos para instalar o projeto:<br>
+PHP >= 7.1.3<br>
+composer >= 1.10<br> 
+Caso não tenha o composer instalado no ambiente caixa, seguir passo à passo<br>
+https://ceptisp34.caixa/q2a/index.php/381/como-resolver-instalacao-composer?show=381#q381<br>
+
+após instalação do PHP,<br>
+"descomentar" no php.ini:<br>
+extension=curl<br>
+extension=fileinfo<br>
+extension=gd2<br>
+extension=ldap<br>
+extension=mbstring<br>
+extension=odbc<br>
+extension=openssl<br>
+extension=pdo_odbc<br>
+extension=pdo_sqlite<br>
+
+após clonar o repositório, rodar os comandos dentro da pasta clonada no prompt:<br>
+1. composer install<br>
+2. copy .env.example .env<br>
+3. php artisan key:generate<br>
+4. criar arquivo database.sqlite dentro da pasta PT_CEFGE_LARAVEL\database<br>
+5. ir no arquivo. env e alterar o DB_CONNECTION para sqlite<br>
+DB_CONNECTION=sqlite<br>
+
+*apagar as seguintes linhas:<br>
+DB_HOST=127.0.0.1<br>
+DB_PORT=3306<br>
+DB_DATABASE=laravel<br>
+DB_USERNAME=root<br>
+DB_PASSWORD=<br>
+
+4.php artisan migrate<br>
+5.php artisan serve<br>
+6. abrir navegador na pagina - http://localhost:8000/<br>
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
